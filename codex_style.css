@@ -1,0 +1,84 @@
+/* css by Bob Corporaal    http://reefscape.net  */
+
+
+
+
+/* BODY */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: url(images/codex.gif) no-repeat #FFFFFF;
+}
+
+img { 
+	border: 0px; 
+	padding: 0px; 
+	margin-bottom: 0px;
+}
+
+/* TYPOGRAPHY */
+h1,h2,h3,h4,p,a {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", lucida, arial narrow, arial, sans-serif;
+	color: #000000;
+}
+
+h1 { 
+	font-size: 18px; 
+	font-weight: normal; 
+	text-transform: uppercase; 
+	margin: 0px; 
+}
+
+h2 { 
+	font-size: 10px; 
+	font-weight: normal; 
+	text-transform: uppercase; 
+	margin: 0px; 
+}
+
+h3 { 
+	color: #222222;
+  	font-size: 10px;
+  	font-weight: normal;
+  	line-height: 12px;
+  	margin: 0px;
+  	margin-bottom: 5px;
+}
+
+a { 
+	font-size: 11px; 
+  	line-height: 16px;
+  	color: #EB008C;
+  	text-decoration: none;
+  	border: none;
+  	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p { 
+  	color: #000000; 
+  	font-size: 11px; 
+  	line-height: 16px; 
+  	margin: 5px; 
+}
+
+/* ELEMENTS */
+
+#container { 
+  	position: absolute;
+
+  	top: 350px;
+  	left: 50px;
+  	margin: 5px;
+  	padding-bottom: 20px;
+}
+
+
+
+
+
+	

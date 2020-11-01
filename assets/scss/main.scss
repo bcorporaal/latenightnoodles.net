@@ -1,0 +1,195 @@
+@import 'open-color';
+
+@font-face{
+    font-family: 'Fira Code';
+    src: url('../fonts/eot/FiraCode-Regular.eot');
+    src: url('../fonts/eot/FiraCode-Regular.eot') format('embedded-opentype'),
+         url('../fonts/woff2/FiraCode-Regular.woff2') format('woff2'),
+         url('../fonts/woff/FiraCode-Regular.woff') format('woff'),
+         url('../fonts/ttf/FiraCode-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+//
+//  fonts
+//
+$font--standard: 'Fira Code';
+$font-weight--standard: 400;
+$list-font-size: calc(0.5vw + 0.55rem); 
+
+$label-font-size: 0.9em;
+$label-margin: 1.2em;
+
+
+//
+//  tweakPane
+//
+:root {
+    --tp-font-family: 'Fira Code';
+}
+
+//
+//  color theme - based on open color
+//
+$theme-basic: $oc-gray-8;
+$theme-text: $oc-gray-8;
+$theme-text-light: $oc-gray-6;
+$theme-text--link: $oc-gray-8;
+$theme-text--link--hover: $oc-cyan-8;
+
+$theme-bgnd: $oc-gray-1;
+$theme-frame: $oc-gray-0;
+
+
+//
+//  basic styles
+//
+body {
+	background-color: $theme-frame;
+
+    font-family: $font--standard;
+    color: $theme-text;
+    font-weight: $font-weight--standard;
+}
+
+html, body {
+    margin: 0;
+    padding: 0; 
+}
+
+//
+//  sketch styles
+//
+.sketch-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.sketch--full {
+    width: 100vw;
+    height: 100vh;
+    background: $theme-bgnd;
+}
+
+.sketch--fixed {
+    max-width: calc(100vw - 2*#{$label-margin});
+    max-height: calc(100vh - 2*#{$label-margin});
+    background: $theme-bgnd;
+    width:1200px;
+    height:800px;
+}
+
+.sketch--square {
+    max-width: 800px;
+    max-height: 800px;
+    background: $theme-bgnd;
+    width:80vw;
+    height:80vw;
+}
+
+.labels {
+
+    a {
+        color: $theme-text--link;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $theme-text--link--hover;
+    }
+
+    a:hover span.label--text {
+        border-bottom: solid 1px $theme-text--link--hover;
+    }
+
+}
+
+.label--back {
+    position: absolute;
+    float:left;
+    top: $label-margin;
+    left: $label-margin;
+}
+
+.label--title {
+    position: absolute;
+    float:left;
+    bottom: $label-margin;
+    left: $label-margin;
+}
+
+.label--github {
+    position: absolute;
+    float:left;
+    bottom: $label-margin;
+    right: $label-margin;
+}
+
+#icon--back {
+    margin-right: 5px;
+}
+
+// .stats-panel {
+//     left: 50% !important;
+// }
+
+//
+//  sketchlist styles
+//
+.home {
+    overflow: visible;
+}
+
+.container {
+    padding: 5em 0 1em 0;
+    text-align: center;
+}
+
+.sketchlist {
+    padding: 10px;
+    display: inline-block;
+    margin: 0px auto;
+    text-align: left;
+
+    a {
+        text-decoration: none;
+        color: $theme-basic;
+    }
+
+    a:hover {
+        border-bottom: 1px solid $theme-basic;
+    }
+
+    h1 {
+        font-size: $list-font-size;
+        font-weight: $font-weight--standard;
+    }
+
+    hr {
+         border: 0; 
+         border-bottom: 1px solid $theme-basic;
+    }
+
+    ul {
+      column-count: 3; 
+      column-gap: 4em;
+      list-style-type: none;
+      margin: 0;
+      padding: 0.5em 0 0.5em 0;
+    }
+
+    li {
+        font-size: $list-font-size;
+        line-height: 1.7em;
+    }
+
+    p {
+        font-size: $list-font-size;
+    }
+}
+
+
+

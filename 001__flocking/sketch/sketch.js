@@ -25,7 +25,7 @@ function setup() {
 
     p5Canvas = createCanvas(canvasWidth, canvasHeight, P2D);
     p5Canvas.parent("sketch-canvas");
-
+    //
     //---------------------------------------------
 
     var maxItemsPerBin = 20
@@ -172,13 +172,8 @@ function draw() {
     //---------------------------------------------
 
     if (!p.endless) {
-      //clear();
       clearScreen();
     }
-    // var c = color('#fff')
-    // c.setAlpha(5)
-    // fill(c)
-    // rect(0,0,width,height)
 
     quadTree.clear();
     for (const boid of flock) {

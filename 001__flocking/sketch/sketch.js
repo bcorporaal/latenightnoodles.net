@@ -35,20 +35,20 @@ function setup() {
     quadTree = new QuadTree(Infinity, maxItemsPerBin, new Rect(0, 0, width, height));
 
     p = {
-        align: 1,
+        align: 0.9,
         cohesion: 1,
         separation: 1.2,
         width: 1,
-        maxSpeed: 12,
-        maxForce: 4,
+        maxSpeed: 11,
+        maxForce: 4.5,
         endless: false,
         trLength: 3,
         rotHue: false,
         showQuad: false,
         percepR: 50,
         percepC: 30,
-        mass: 2.5,
-        nrBoids: 550,
+        mass: 3,
+        nrBoids: 300,
         boidBatch: 10,
     }
 
@@ -115,7 +115,7 @@ function setup() {
       flock.push(b);
     }
 
-    fc = color('#EEE')
+    fc = color('#EEE');
     clearScreen();
 
     //--------------------------------------------
@@ -159,7 +159,7 @@ function removeBoids() {
 }
 
 function clearScreen() {
-    clear();
+    //clear();
     fill(fc);
     noStroke();
     rect(0,0,width,height);

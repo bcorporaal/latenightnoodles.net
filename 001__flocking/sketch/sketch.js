@@ -48,8 +48,8 @@ function setup() {
         percepR: 50,
         percepC: 30,
         mass: 3,
-        nrBoids: 300,
-        boidBatch: 10,
+        nrBoids: 250,
+        boidBatch: 25,
     }
 
     const f0 = toko.pane.addFolder({
@@ -79,13 +79,13 @@ function setup() {
     });
 
     f1.addButton({
-        title: 'Add 10 boids',
+        title: `Add ${p.boidBatch} boids`, 
       }).on('click', (value) => {
         addBoids();
     });
 
     f1.addButton({
-        title: 'Remove 10 boids',
+        title: `Remove ${p.boidBatch} boids`,
       }).on('click', (value) => {
         removeBoids();
     });

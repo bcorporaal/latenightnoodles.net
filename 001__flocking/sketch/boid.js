@@ -60,13 +60,13 @@
 
 class Boid {
   constructor() {
-    this.position = createVector(random(width), random(height));
+    this.position = createVector(random(width),height/2);
     this.velocity = p5.Vector.random2D();
     this.velocity.setMag(random(2, 4));
     this.acceleration = createVector();
     this.maxForce = p.maxForce;
     this.maxSpeed = p.maxSpeed;
-    this.currentColor = Math.random()*255;//128;
+    this.currentColor = Math.random()*255;
     this.colorSpeed = 1;
     this.oldPosition = this.position.copy();
     this.mass = p.mass;
@@ -74,12 +74,6 @@ class Boid {
     this.trailLength = p.trLength;
     this.trail = [];
     this.rotHue = p.rotHue;
-
-    // this.colorScale = d3.scaleSequential()
-    //   .domain([0, 255])
-    //   .interpolator(d3.interpolateYlOrBr);
-
-    // this.colorScale = toko.createColorScale(toko.colorScales.fadedRainbow,0,255)
 
     this.colorPalette = toko.getColorPalette('fadedRainbow',256);
 
@@ -213,12 +207,8 @@ class Boid {
     var lc = color(this.colorPalette.scale(this.currentColor));
 
     strokeWeight(p.width);
-    //lc.setAlpha(50);
     stroke(lc);
-    // point(this.position.x, this.position.y);
-    // line(this.oldPosition.x, this.oldPosition.y,this.position.x,this.position.y);
 
-    // var l = this.trail.length
     //
     //  add latest position to the trail
     //
@@ -231,13 +221,9 @@ class Boid {
 
         
     //
-    //  draw the tail
+    //  draw the trail
     //
     for (var i = 1; i < l; i++) {
-        // if(this.trailFade) {
-          
-        //   stroke(lc);
-        // }
         line(this.trail[i-1].x, this.trail[i-1].y,this.trail[i].x,this.trail[i].y);
     }
     

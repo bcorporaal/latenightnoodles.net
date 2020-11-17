@@ -48,7 +48,7 @@ function setup() {
         percepR: 50,
         percepC: 30,
         mass: 3,
-        nrBoids: 250,
+        nrBoids: 350,
         boidBatch: 25,
     }
 

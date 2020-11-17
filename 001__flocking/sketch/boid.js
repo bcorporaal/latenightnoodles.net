@@ -33,16 +33,16 @@
 //  IDEA 8
 //  confine to screen instead of wrapping around
 
-//  IDEA 9
+//  IDEA 9 - DONE
 //  convert to p5.js
 
-//  IDEA 10
+//  IDEA 10 - DONE
 //  limit acceleration (probably allowing for collisions)
 
-//  IDEA 11
+//  IDEA 11 - DONE
 //  convert to sketchbook css and navigation
 
-//  IDEA 12
+//  IDEA 12 - DONE
 //  add controls for the parameters
 
 //  IDEA 13

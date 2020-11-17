@@ -133,8 +133,6 @@ function refresh() {
 
 function addBoids() {
 
-  n = flock.length
-
   for (let i = 0; i < p.boidBatch; i++) {
     var b = new Boid();
     boidIDCounter++;
@@ -159,7 +157,6 @@ function removeBoids() {
 }
 
 function clearScreen() {
-    //clear();
     fill(fc);
     noStroke();
     rect(0,0,width,height);

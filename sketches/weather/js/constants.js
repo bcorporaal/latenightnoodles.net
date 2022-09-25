@@ -1,0 +1,2 @@
+const ABRI_WIDTH = 1189;
+const ABRI_HEIGHT = 1750;

@@ -97,19 +97,19 @@ function setup() {
     //
     //  basic options
     //
-    title: "Prototype Day - Take 2",    //  title displayed
+    title: "Weather Patterns",          //  title displayed
     sketchElementId: sketchElementId,   //  id used to create the p5 canvas
     canvasSize: toko.SIZE_DEFAULT,      //  canvas size to use
     //
     //  additional options
     //
     showSaveSketchButton: true,         //  show save image button in tweakpane
-    saveSettingsWithSketch: false,       //  save json of settings together with the image
+    saveSettingsWithSketch: false,      //  save json of settings together with the image
     acceptDroppedSettings: true,        //  accept dropped json files with settings
     useParameterPanel: true,            //  use the tweakpane panel for settings
-    hideParameterPanel: false,           //  hide the parameter panel by default (show by pressing 'p')
-    showAdvancedOptions: false,          //  show advanced settings in tweakpane, like size
-    captureFrames: false,                //  add record option in tweakpane
+    hideParameterPanel: false,          //  hide the parameter panel by default (show by pressing 'p')
+    showAdvancedOptions: false,         //  show advanced settings in tweakpane, like size
+    captureFrames: false,               //  add record option in tweakpane
     captureFrameCount: 999,             //  max number of frames captured (is this actually used?)
     captureFrameRate: 15,               //  basic frame rate for capture
     captureFormat: 'png',               //  default image format for capture

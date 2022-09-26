@@ -108,8 +108,8 @@ function setup() {
     acceptDroppedSettings: true,        //  accept dropped json files with settings
     useParameterPanel: true,            //  use the tweakpane panel for settings
     hideParameterPanel: false,           //  hide the parameter panel by default (show by pressing 'p')
-    showAdvancedOptions: true,          //  show advanced settings in tweakpane, like size
-    captureFrames: true,                //  add record option in tweakpane
+    showAdvancedOptions: false,          //  show advanced settings in tweakpane, like size
+    captureFrames: false,                //  add record option in tweakpane
     captureFrameCount: 999,             //  max number of frames captured (is this actually used?)
     captureFrameRate: 15,               //  basic frame rate for capture
     captureFormat: 'png',               //  default image format for capture

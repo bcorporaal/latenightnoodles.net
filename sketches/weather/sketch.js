@@ -104,10 +104,10 @@ function setup() {
     //  additional options
     //
     showSaveSketchButton: true,         //  show save image button in tweakpane
-    saveSettingsWithSketch: true,       //  save json of settings together with the image
+    saveSettingsWithSketch: false,       //  save json of settings together with the image
     acceptDroppedSettings: true,        //  accept dropped json files with settings
     useParameterPanel: true,            //  use the tweakpane panel for settings
-    hideParameterPanel: true,           //  hide the parameter panel by default (show by pressing 'p')
+    hideParameterPanel: false,           //  hide the parameter panel by default (show by pressing 'p')
     showAdvancedOptions: true,          //  show advanced settings in tweakpane, like size
     captureFrames: true,                //  add record option in tweakpane
     captureFrameCount: 999,             //  max number of frames captured (is this actually used?)

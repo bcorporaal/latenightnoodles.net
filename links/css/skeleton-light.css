@@ -95,6 +95,12 @@ body {
   font-weight: 400;
   font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
+  background-color: #EAEAE8;
+  color:#333;
+}
+
+.light {
+  color :#999;
 }
 
 /* Typography
@@ -205,6 +211,14 @@ hr {
   object-fit: cover;
   background-position: center;
   border-radius: 50%;
+}
+
+.avatar2 {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  background-position: center;
+  /* border-radius: 50%; */
 }
 
 /* open-sans-regular - vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic */

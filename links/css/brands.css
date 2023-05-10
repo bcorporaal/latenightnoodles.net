@@ -44,7 +44,7 @@ button {
   letter-spacing: 0.1px;
   white-space: wrap;
   outline: none;
-  border-radius: 8px;
+  border-radius: 4px;
   cursor: pointer;
   
 }     
@@ -76,6 +76,16 @@ button:hover,
 
 /* Brand Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Default (this is great for your own brand color!) */
+.button.button-lnn {
+  color: #ffffff;
+  background-color: #404040;
+}
+.button.button-lnn:hover,
+.button.button-lnn:focus {
+  filter: brightness(120%);
+}
 
 /* Default (this is great for your own brand color!) */
 .button.button-default {
